@@ -4,8 +4,8 @@
 LOGIN_REDIRECT_WHITELIST = ["{{ CMS_HOST }}"]
 
 # Better layout of honor code/tos links during registration
-REGISTRATION_EXTRA_FIELDS["terms_of_service"] = "hidden"
-REGISTRATION_EXTRA_FIELDS["honor_code"] = "hidden"
+REGISTRATION_EXTRA_FIELDS["terms_of_service"] = "required"
+REGISTRATION_EXTRA_FIELDS["honor_code"] = "required"
 
 # Fix media files paths
 PROFILE_IMAGE_BACKEND["options"]["location"] = os.path.join(
